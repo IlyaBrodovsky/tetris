@@ -51,21 +51,24 @@ button {
 	color: rgba(0, 116, 238, 0.85);
 }
 .right {
-	font-size: 40px;
+	font-size: 60px;
 	cursor: pointer;
-	color: rgba(0, 116, 238, 0.85);
+	touch-action: manipulation;
 }
 .left {
-	font-size: 40px;
+	font-size: 60px;
 	cursor: pointer;
+	touch-action: manipulation;
 }
 .down{
-	font-size: 40px;
+	font-size: 60px;
 	cursor: pointer;
+	touch-action: manipulation;
 }  
 .up {
-	font-size: 40px;
+	font-size: 60px;
 	cursor: pointer;
+	touch-action: manipulation;
 }
 
 .excel {
@@ -178,12 +181,12 @@ input {
 @media (max-width: 568px) {
 
 	.main {
-		margin: 0 auto;
-		position: relative;
-		overflow: hidden;
-		width: 352px;
-		height: 499px;
-		border: 1px solid #000;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 421px;
+	border: 0.5px solid #000;
 	}
 	.figure, .set {
 	background-color: rgba(0, 116, 238, 0.85);
@@ -193,8 +196,8 @@ input {
 	}
 
 	.tetris {
-		width: 350px;
-		height: 639px;
+		width: 300px;
+		height: 540px;
 		display: flex;
 		overflow: hidden;
 		flex-wrap: wrap;
@@ -204,9 +207,9 @@ input {
 	}
 
 	.excel {
-		height: 35px;
-		width: 35px;
-		border:1px solid rgba(45, 31, 31, 0.39);
+		height: 30px;
+		width: 30px;
+		border: .3px solid rgba(45, 31, 31, 0.39);
 	}
 
     .modal {
