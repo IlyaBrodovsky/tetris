@@ -142,7 +142,7 @@ function move () {
  		for (let i = 1; i < 15; i++) {
  			let count = 0
  			for (let k = 1; k < 11; k++) {
- 				if (document.querySelector(`[posX = "${k}"][posY = "${k}"]`).classList.contains('set')) {
+ 				if (document.querySelector(`[posX = "${k}"][posY = "${i}"]`).classList.contains('set')) {
  					count++
  					if (count == 10) {
  						score += 10
@@ -156,7 +156,7 @@ function move () {
  							let setCoordinates = [set[s].getAttribute('posX'), set[s].getAttribute('posY') ]
  							if (setCoordinates[1] > i) {
  								set[s].classList.remove('set')
- 								newSet.push(document.querySelector(`[posX = "${setCoordinates[0]}"][posX = "${setCoordinates[1] - 1}"]`)) 
+ 								newSet.push(document.querySelector(`[posX = "${setCoordinates[0]}"][posY = "${setCoordinates[1] - 1}"]`)) 
  							}
  						}
  						for (let a = 0; a < newSet.length; a++) {
