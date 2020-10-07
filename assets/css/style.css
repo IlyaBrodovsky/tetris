@@ -242,7 +242,10 @@ input {
 	}
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	.controls {
+		opocity: 0;
+}
 
 
 @media (min-width: 992px) {}
