@@ -5,9 +5,14 @@ let modalControl = document.querySelector('.modalControl')
 let speed = 0 
 
 
+// modal window control
 
+modalControl.addEventListener('click', function(event) {
+	if (event.target.classList.contains('okay')) {
+		modalControl.style.display = 'none'	
+	}
+})
 // modal window difficulty
-
 modal.addEventListener('click', function(event) {
 
 	if (event.target.classList.contains('easy')) {

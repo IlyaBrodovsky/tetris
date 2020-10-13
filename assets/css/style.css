@@ -46,10 +46,10 @@ button {
 	color: rgba(0, 116, 238, 0.85);
 	margin: 0 auto;
 }
-.controls-title {
-	text-align: center;
-	color: rgba(0, 116, 238, 0.85);
-}
+
+
+
+
 .right {
 	font-size: 60px;
 	cursor: pointer;
@@ -60,7 +60,7 @@ button {
 	cursor: pointer;
 	touch-action: manipulation;
 }
-.down{
+.down {
 	font-size: 60px;
 	cursor: pointer;
 	touch-action: manipulation;
@@ -86,7 +86,6 @@ input {
 	margin: 30px auto;
 	font-size: 30px;
 	padding: 10px;
-
 }
 
 
@@ -106,9 +105,8 @@ input {
 	border-radius: 20px;
 }
 
-/*.modalControl {
+.modalControl {
 	position: fixed;
-	text-transform: uppercase;
 	width: 500px;
 	height: 500px;
 	top: 50%;
@@ -120,15 +118,66 @@ input {
 	align-items: center;
 	flex-direction: column;
 	border-radius: 20px;
-}*/
+}
+
+/*title*/
 
 
 
 .title {
 	color: #5a84a2;
-	font-size: 24px;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+.title-control {
+	color: #5a84a2;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
 }
 
+.control-item1 {
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		color: rgba(0, 116, 238, 0.85);
+}
+
+.control-item2 {
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		color: rgba(0, 116, 238, 0.85);
+
+}
+.control-item3 {
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		color: rgba(0, 116, 238, 0.85);
+
+}
+.control-item4 {
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+		color: rgba(0, 116, 238, 0.85);
+	}
+
+/*subtitle*/
+
+.subtitle {
+
+	font-size: 20px;
+	margin-top: 14px;
+	color: #5a84a2;
+}
+
+/*button */
 .button {
 	position: relative;
     display: inline-block;
@@ -166,6 +215,46 @@ input {
     transform: scale(0.98);
 }
 
+.button-okay {
+	position: relative;
+    display: inline-block;
+    align-items: center;
+    padding: 30px 0px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #5a84a2;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.button-okay:hover {
+	box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);  
+}
+
+.button-okay:hover span
+{
+    display: inline-block;
+    transform: scale(0.98);
+}
+/*===============
+overlay=========*/
+
 .overlay {
 	position: fixed;
 	top: 0;
@@ -174,6 +263,13 @@ input {
 	height: 100%;
 	z-index: 2;
 	background-color: #1e488c;
+}
+/*control-window*/
+
+.control-window {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 
@@ -223,28 +319,91 @@ input {
 	}
 
 	.title {
-		font-size: 12px;
+		font-size: 14px;
+		margin-bottom: 20px;
+		font-weight: normal;
+	}
+	.title-control {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.subtitle {
+		font-size: 14px;
+		margin-top: 12px;
+		color: #5a84a2;
 	}
 	.controls {
-		font-size: 0;
+		font-size: 40px;
 		display: flex;
 		width: auto;
 		justify-content: space-between;
 		
 	}
-	.sub-title {
-		font-size: 0;
-	}
-
+	
 	.button {
 		width: 200px;
 		padding: 20px 0px;
+		font-size: 14px;
+	}
+	.button-okay {
+		width: 200px;
+		padding: 20px 0px;
+		font-size: 14px;
+	}
+	.control-items {
+		height: 300px;
+	}
+	.control-item1 {
+		width: 200px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		color: rgba(0, 116, 238, 0.85);
+	}
+
+	.control-item2 {
+		width: 200px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		color: rgba(0, 116, 238, 0.85);
+
+	}
+	.control-item3 {
+		width: 200px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		color: rgba(0, 116, 238, 0.85);
+
+	}
+	.control-item4 {
+		width: 200px;
+		display: flex;
+		justify-content: space-between;
+		color: rgba(0, 116, 238, 0.85);
+	}
+
+
+	.right {
+		font-size: 40px;
+		align-items: center;
+	}
+	.left {
+		font-size: 40px;
+	}
+	.up {
+		font-size: 40px;
+	}
+	.down {
+		font-size: 40px;
 	}
 }
 
 @media (min-width: 768px) {
 	.controls {
-		opocity: 0;
+		opacity: 0;
+	}
 }
 
 
