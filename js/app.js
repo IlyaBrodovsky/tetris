@@ -1,9 +1,18 @@
 
 let overlay = document.querySelector('.overlay')
 let modal = document.querySelector('.modal')
-let modalControl = document.querySelector('.modalControl') 
+let modalControl = document.querySelector('.modalControl')
+let mainScreen = document.querySelector('.modalscreen') 
 let speed = 0 
 
+
+//mainScreen
+
+mainScreen.addEventListener('click', function(event) {
+	if (event.target.classList.contains('start')) {
+		mainScreen.style.display = 'none'
+	}
+})
 
 // modal window control
 
