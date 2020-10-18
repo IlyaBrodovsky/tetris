@@ -39,10 +39,6 @@ modal.addEventListener('click', function(event) {
 
 })
 
-
-
-
-
 // Start Game 
 
 function startGame () {
