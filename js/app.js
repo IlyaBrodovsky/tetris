@@ -37,12 +37,16 @@ modal.addEventListener('click', function(event) {
 
 })
 //document.getElementById('sound-tetris').play();
-setTimeout(() => {
+/*setTimeout(() => {
   document.getElementById('sound-tetris').play();
-}, 5000)
+}, 500)*/
 // Start Game 
 
 function startGame () {
+
+setTimeout(() => {
+  document.getElementById('sound-tetris').play();
+}, 500)
 
 	let tetris = document.createElement('div')
 	tetris.classList.add('tetris')
