@@ -36,14 +36,11 @@ modal.addEventListener('click', function(event) {
 	}
 
 })
-//document.getElementById('sound-tetris').play();
-/*setTimeout(() => {
-  document.getElementById('sound-tetris').play();
-}, 500)*/
-// Start Game 
+
 
 function startGame () {
-
+	
+// music game 
 document.getElementById('sound-tetris').play();
 
 	let tetris = document.createElement('div')
