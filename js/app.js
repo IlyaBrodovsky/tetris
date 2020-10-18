@@ -44,9 +44,7 @@ modal.addEventListener('click', function(event) {
 
 function startGame () {
 
-setTimeout(() => {
-  document.getElementById('sound-tetris').play();
-}, 500)
+document.getElementById('sound-tetris').play();
 
 	let tetris = document.createElement('div')
 	tetris.classList.add('tetris')
