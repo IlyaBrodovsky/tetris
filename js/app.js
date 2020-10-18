@@ -4,7 +4,7 @@ let modal = document.querySelector('.modal')
 let modalControl = document.querySelector('.modalControl')
 let mainScreen = document.querySelector('.modalscreen') 
 let speed = 0 
-
+let audio = document.getElementById('sound-tetris').play()
 
 //mainScreen
 
