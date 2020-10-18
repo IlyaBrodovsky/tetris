@@ -10,9 +10,11 @@ button {
   color: inherit;
   background-color: transparent;
 }
+/* sound tetris*/
 
-
-
+.sound-tetris {
+	display: none;
+}
 
 /*видимая часть */
 .main {
@@ -46,9 +48,6 @@ button {
 	color: rgba(0, 116, 238, 0.85);
 	margin: 0 auto;
 }
-
-
-
 
 .right {
 	font-size: 60px;
@@ -156,10 +155,6 @@ input {
 	margin-top: 110px;
 	color: rgba(0, 116, 238, 0.85);
 }
-
-
-
-
 .control-item1 {
 		width: 300px;
 		display: flex;
@@ -259,8 +254,6 @@ input {
     inset 2px 2px 4px rgba(255, 255, 255, 0.1),
     2px 2px 8px rgba(0, 0, 0, 0.15);
 }
-
-
 
 .button-okay:hover {
 	box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),

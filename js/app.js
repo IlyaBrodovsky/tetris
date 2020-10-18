@@ -4,10 +4,8 @@ let modal = document.querySelector('.modal')
 let modalControl = document.querySelector('.modalControl')
 let mainScreen = document.querySelector('.modalscreen') 
 let speed = 0 
-let audio = document.getElementById('sound-tetris').play()
 
 //mainScreen
-
 mainScreen.addEventListener('click', function(event) {
 	if (event.target.classList.contains('start')) {
 		mainScreen.style.display = 'none'
@@ -38,7 +36,10 @@ modal.addEventListener('click', function(event) {
 	}
 
 })
-
+//document.getElementById('sound-tetris').play();
+setTimeout(() => {
+  document.getElementById('sound-tetris').play();
+}, 5000)
 // Start Game 
 
 function startGame () {
